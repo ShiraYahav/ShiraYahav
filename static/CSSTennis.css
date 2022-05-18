@@ -24,6 +24,7 @@ body {
 #header {
         font-size:70px;
         color: grey;
+        
 }
 
 #description {
@@ -114,7 +115,7 @@ body {
 
   
 .fast {
- height: 70px;	
+ height: 90px;	
  overflow: hidden;
  position: relative;
  
@@ -131,9 +132,9 @@ body {
  -webkit-transform:translateY(50%);	
  transform:translateY(50%);
  /* Apply animation to this element */	
- -moz-animation: fast 1.5s linear infinite alternate;
- -webkit-animation: fast 1.5s linear infinite alternate;
- animation: fast 1.5s linear infinite alternate;
+ -moz-animation: fast 1s linear infinite alternate;
+ -webkit-animation: fast 1s linear infinite alternate;
+ animation: fast 1s linear infinite alternate;
 
 }
 /* Move it (define the animation) */
