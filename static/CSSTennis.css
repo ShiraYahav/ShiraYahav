@@ -6,14 +6,23 @@ body {
     text-align: center;
 }
 
+#rightHalf {
+
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+ }
+
 #HomePage {
     
     background-image: url('../static/tennislogos.jpg');
-    background-size: 50% 400px;
-    
-    text-align: center;
-    
-}
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+ }
 
 #ContactPage {
     background-image: url('../static/Tennisteam.jpg');
@@ -52,8 +61,8 @@ body {
 .p {
     float: center;
     margin-bottom: 40px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #Image
@@ -90,6 +99,8 @@ body {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    
+    
   }
   
   /* Links inside the navbar */
@@ -108,10 +119,7 @@ body {
     color: black;
   }
   
-  /* Main content */
-  .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
-  }
+
 
   
 .fast {
