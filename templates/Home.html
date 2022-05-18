@@ -5,84 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      <link rel="stylesheet" href="../static/CSSTennis.css">
 </head>
-<body>
-    <h1 id="header">Tennis World </h1>
+<body class="body" id="HomePage" >
+    <div class="navbar">
+        <a href="../templates/Home.html">Home</a>
+        <a href="../templates/ContactPage.html">Contact</a>
+      </div>
+      
+      <div class="main">
+        <p>Some text some text some text some text..</p>
+      </div>
+
+    <h1 id="header">Tennis World</h1>
     <h2 id="description">To better health and mind</h2>
  <div class="p">
     Playing tennis regularly helps the brain release serotonin and endorphins. 
     Higher levels of these two neurotransmitters have been shown to decrease stress, anxiety and depression, while positively influencing someone’s mood and sleep.
- </div>
-    <div class="p">
+ <br></br>
     Tennis is a complex sport. It requires quick decision making, critical thinking, and coordination. 
     The more a tennis player practices the previous listed skills, the better tennis player they will become. 
     Critical thinking and decision making are beneficial qualities for any task we need to tackle in life!
     </div>
 
-    <div class="lastraw">
+    <div id="lastrow">
         To join our tennis community!
     </div>
 
-<style >
-    h1 {
-        color: rgb(83, 74, 74); font-size: 50px;
-        text-align:center
-    }
-    
-    h2{
-        color: rgb(83, 74, 74); font-size: 40px;
-        text-align:center
-    }
-    .p {
-        color:rgb(100, 90, 90); font-size: 23px;
-        text-align:center;
-        float: center;
-        margin-bottom: 40px;
-       margin-left: 150px;
-        margin-right: 150px;
-    }
-    body {
-    background-image: url('../static/tennisballs.jpg');
-    background-size:auto;
-    text-align: center;
-    margin-right: 50;
-    margin-left: 50;
-    }
-
-    .lastraw {
-        color:rgb(28, 119, 16); font-size: 20px;
-        text-align:center;
-        float: center;
-        margin-bottom: 30px;
-    }
-    .button {
-            background-color: white;
-            
-            color: black;
-            padding: 5px 10px;
-            text-align: center;
-            display: inline-block;
-            font-size: 15px;
-            margin: 10px 20px;
-            cursor: pointer;
-            padding: 20;
-        }
- 
-    .centerImage
-{
- text-align:center;
- float: center;
- margin-top: 30;
- padding: 9;
-}
- 
-   </style>
     <a href="../templates/ContactPage.html">
         <button class="button"; style="display:block; margin: 0 auto;" >
             Click Here
         </button>
     </a><br><br>
-    <a class="lastraw"> Find us on Apple and Google store</a3><br><br>
+    <a id="lastrow"> Find us on Apple and Google store</a3><br><br>
     <img src="../static/appstore.png" width="100" height="100" class="centerImage"/>
 </body>
 </html>
