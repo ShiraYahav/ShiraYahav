@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../static/CSSTennis.css">
-    <script src="../static/TennisJS.js"></script>
+    <script defer src="../static/TennisJS.js"></script>
 </head>
-<body class="Body" id="ContactPage">
 
-    <div class="navbar">
+<body>
+<page-container class="body">
+    <div class="navbar" id="navbar">
         <a href="../templates/Home.html">Home</a>
-        <a href="../templates/ContactPage.html">Contact</a>
+        <a href="../templates/ContactPage.html">Contact Us</a>
       </div>
       
-      
+     <div class="main">
     <h1 id="header">Tennis World</h1>
-    <h2 id="description" style="color:rgb(197, 22, 22)">To better health and mind</h2>
+    <h2 id="type-text" style="margin: bottom 50px;"></2>
+    </div>
 
-    <div class="leftsection">
+    <div id="backimage" class="main-container">
+        <div class="content-container">  
     <form action="/action_page.php" method="get">
-        <label for="fname">First Name:</label> <tr> <td>
-        <input type="text" id="fname" name="fname" required maxlength="20"><br><br> 
+        <label for="fname">First Name:</label> 
+        <input type="text" id="fname" name="fname" required maxlength="20"><br><br>
         <label for="lname">Last Name:</label>
         <input type="text" id="lname" name="lname" required maxlength="20"><br><br>
         <label for="pnumber">Phone Number:</label>
@@ -45,13 +48,15 @@
         <input type="submit" value="Submit">
         
         </form>
-    </div>
+        </div>
  
-        <div class="rightsection">
+        <div class="image-container" id="textbox">
             <label for="moreinfo">Tell us more about your expierence</label><br><br>
             <textarea name="text" id="info" cols="30" rows="10"></textarea>
         </div>
 
+    </div>
 
+</page-container>
 </body>
 </html>

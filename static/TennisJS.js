@@ -1,27 +1,55 @@
-var i=0;
-var text = "this is a typewritwe effect Demo!";
-console.log(text)
-var speed= 50
 
-function typing() {
-    if(i<text.length){
-        document.getElementById("description").innerHTML += text.charAt(i)
+
+window.onload = onPageLoad;
+// window.onload = typeMyText;
+
+var i = 0;
+var txt = '     To better health and mind all around.';
+var speed = 120;
+
+
+function onPageLoad(){
+    
+    setActive();
+    typeMyText();
+}
+
+
+
+function typeMyText() {
+    if (i < txt.length) {
+        document.getElementById("type-text").innerHTML += txt.charAt(i);
         i++;
-        setTimeout(() => {
-            typing();
- 
-        }, speed);
+        setTimeout(typeMyText, speed);
     }
 }
 
-var i = 0;
-var txt = 'To better health and mind';
-var speed = 50;
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("description").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
+function setActive() {
+    aObj = document.getElementById('navbar').getElementsByTagName('a');
+    for(i=0;i<aObj.length;i++) {
+      if(document.location.href.indexOf(aObj[i].href)>=0) {
+        aObj[i].className='active';
+      }
+    }
 }
+
+function changeImage() {
+    var myImage = document.getElementById('changeimage');
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === "../static/tennislogos.jpg") {
+        myImage.setAttribute('src',"../static/tennisball.jpg");
+     } else {
+        myImage.setAttribute('src',"../static/tennislogos.jpg");
+     }
+}
+
+ 
+
+
+
+
+  
+
+
+

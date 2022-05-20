@@ -6,44 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
       <link rel="stylesheet" href="../static/CSSTennis.css">
-      <script src="../static/TennisJS.js"></script>
+      <script defer src="../static/TennisJS.js"></script>
 </head>
 
-<body class="body" >
-   <div class="navbar">
-    <a href="../templates/Home.html">Home</a>
-    <a href="../templates/ContactPage.html">Contact</a>
-  </div>
-
-  <div class="main">
-    <p>Some text some text some text some text..</p>
-  </div>
-
-      <div class="fast" >
-        <h1 id="header">Tennis World</h1>
+<body>
+    <page-container class="body">
+      <div class="navbar" id="navbar">
+        <a href="../templates/Home.html">Home</a>
+        <a href="../templates/ContactPage.html">Contact Us</a>
       </div>
-   
-    <h2 id="description" >To better health and mind</h2>
- <div class="p" >
-    Playing tennis regularly helps the brain release serotonin and endorphins. 
-    Higher levels of these two neurotransmitters have been shown to decrease stress, anxiety and depression, while positively influencing someone’s mood and sleep.
- <br></br>
-    Tennis is a complex sport. It requires quick decision making, critical thinking, and coordination. 
-    The more a tennis player practices the previous listed skills, the better tennis player they will become. 
-    Critical thinking and decision making are beneficial qualities for any task we need to tackle in life!
-    </div>
-
-    <div id="lastrow">
-        To join our tennis community!
-    </div>
-
-    <a href="../templates/ContactPage.html" >
-        <button onclick="typeWriter()">
-            Click Here
-        </button>
-    </a><br><br>
-    <a id="lastrow" > Find us on Apple and Google store</a3><br><br>
-    <img src="../static/appstore.png" width="90" height="90" id="Image"/>
-</body>
-</html>
-
+      <div class="main">
+        <p>Some text some text some text some text..</p>
+      </div>
+      <div class="main-container">
+        <div class="content-container">
+          <div class="jumping-header">
+            <h1>Tennis World</h1>
+          </div>
+          <div class="second-header">
+            <h2 id="second-header">To better health and mind</h2>
+          </div>
+          <div class="content">
+            <div class="p" >
+              Playing tennis regularly helps the brain release serotonin and endorphins. 
+              Higher levels of these two neurotransmitters have been shown to decrease stress, anxiety and depression, while positively influencing someone’s mood and sleep.
+              <br></br>
+              Tennis is a complex sport. It requires quick decision making, critical thinking, and coordination. 
+              The more a tennis player practices the previous listed skills, the better tennis player they will become. 
+              Critical thinking and decision making are beneficial qualities for any task we need to tackle in life!
+            </div>
+            <br>
+          </div>
+          <div class="bottom">
+            <div id="lastrow">To join our tennis community!</div><br>
+            <a href="../templates/ContactPage.html">
+            <button class="button">Click Here</button>
+            </a><br><br>
+            <a id="lastrow"> Find us on Apple and Google store</a3><br><br>
+            <img src="../static/appstore.png"  width="90" height="90" id="Image"/>
+          </div>
+    
+        </div>
+        <div class="image-container">
+          <img id="changeimage" src="../static/tennislogos.jpg" onclick="changeImage()" height="700px" alt="Swaggy Bunny"/>
+        
+        </div>
+      </div>
+      
+    </page-container>
+  </body>
+  </html>
