@@ -31,9 +31,7 @@
     color: grey;
 }
 
-#backimage {
-    background-image: url("../static/tennisclub.jpg") no-repeat;
-}
+
 
 .body{
 
@@ -47,7 +45,7 @@
     display: grid;
     align-items: initial;
     grid-template-columns: 50% 50%;
-    background-color:#f0fbd4 ;
+    background-color:#b8d173 ;
 }
 
 
