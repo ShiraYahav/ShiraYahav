@@ -1,7 +1,7 @@
 
 
 window.onload = onPageLoad;
-// window.onload = typeMyText;
+
 
 var i = 0;
 var txt = '     To better health and mind all around.';
